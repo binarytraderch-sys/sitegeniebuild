@@ -1,0 +1,29 @@
+# robots.txt for https://sitegeniebuild.com
+
+# ── Block AI training crawlers ──────────────────────────────────────────────
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+# ── Allow all standard search engine crawlers ────────────────────────────────
+
+User-agent: *
+Allow: /
+
+# Block internal API paths from indexing
+Disallow: /api/
+Disallow: /supabase/
+
+Sitemap: https://sitegeniebuild.com/sitemap.xml
